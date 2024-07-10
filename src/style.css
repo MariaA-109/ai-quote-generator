@@ -1,0 +1,115 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #e6dee7d5;
+}
+a {
+  text-decoration: none;
+  color: #65a96b;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-wrapper {
+  background-color: rgba(255, 255, 255, 0.526);
+  box-shadow: 1px solid rgba(39, 33, 66, 0.5);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  font-size: 10px;
+  color: #666;
+  line-height: 1.5;
+  margin-left: 5px;
+}
+
+.input-text {
+  font-family: "Courier New", Courier, monospace;
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 24px;
+}
+
+.input-button {
+  font-family: "Courier New", Courier, monospace;
+  margin: 10px 0 0 10px;
+  background-color: #65a96b;
+  font-weight: 500;
+  color: white;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.poem {
+  font-size: 16px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.526);
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1.8;
+  font-weight: 400;
+  border-left: 3px solid #96bd99;
+  box-shadow: 0px 4px 3px 0px rgba(39, 33, 66, 0.03);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #666;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+  font-size: 12px;
+}

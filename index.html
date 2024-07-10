@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Quote Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>InspireBot</h1>
+        <h2>Your Daily Dose of Motivation</h2>
+      </header>
+      <main>
+        <div class="form-wrapper">
+          <form id="poem-generator">
+            <input
+              type="text"
+              placeholder="Enter a word or phrase for your quote..."
+              autofocus
+              required
+              autocomplete="off"
+              class="input-text"
+              id="instructions"
+            />
+            <input type="submit" value="Generate" class="input-button" />
+          </form>
+          <div class="hint">i.e: self-care</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        <p>
+          This AI project was coded by
+          <a href="https://github.com/MariaA-109 " target="_blank"
+            >Alexa Acosta</a
+          >, is
+          <a
+            href="https://github.com/MariaA-109/ai-poem-generator"
+            target="_blank"
+            >open-sourced</a
+          >
+          on GitHub and is
+          <a href="https://mai-poem-generator.netlify.app/" target="_blank"
+            >hosted</a
+          >
+          on Netlify.
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
